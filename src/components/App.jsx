@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404';
 import Home from './Home';
 
+//define Home!
 function App(){
   return (
     <Switch>
