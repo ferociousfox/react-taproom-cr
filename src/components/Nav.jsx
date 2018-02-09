@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Nav () {
+function Nav(){
   const linkDecoration = {
     textDecoration: 'none'
   };
