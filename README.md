@@ -1,2 +1,2 @@
 ## Component Tree
-![Component Tree](img-resources/component-tree.JPG)
+![Component Tree](/img-resources/component-tree.JPG)
