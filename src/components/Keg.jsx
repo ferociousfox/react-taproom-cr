@@ -6,10 +6,18 @@ function Keg(props){
     <div>
       <h2>{props.brand}</h2>
       <ul>
-        <li>{props.name}</li>
-        <li>{props.price}</li>
-        <li>{props.abv}</li>
+        <li className='cider-name'>{props.name}</li>
+        <li>Price: {props.price}</li>
+        <li>ABV: {props.abv}</li>
       </ul>
+      <style jsx>{`
+        li{
+          margin: 5px;
+        }
+        .cider-name {
+          font-style: italic;
+        }
+      `}</style>
     </div>
 
   );

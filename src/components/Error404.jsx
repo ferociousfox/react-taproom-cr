@@ -9,6 +9,7 @@ function Error404(props){
     <div className='warning'>
       <Hero
         heroImage={spaceCat}/>
+      <h1>Error 404, Not Found</h1>
       <h2>The page {props.location.pathname} does not exist!</h2>
       <h3>Would you like to return <Link to ="/">home</Link> instead?</h3>
       <style jsx>{`

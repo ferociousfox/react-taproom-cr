@@ -14,8 +14,11 @@ function App(){
           padding: 0;
           box-sizing: border-box;
           font-family: sans-serif;
+          list-style: none;
         }
-
+        body{
+          background-color: #942524;
+        }
     `}</style>
       <Switch>
         <Route exact path='/' component={Home}/>

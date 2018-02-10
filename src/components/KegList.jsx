@@ -32,14 +32,29 @@ function KegList(){
       <Hero
         heroImage={ciderTaps}/>
       <Nav/>
-      {masterKegList.map((keg, index) =>
-        <Keg
-          name={keg.name}
-          brand={keg.brand}
-          price={keg.price}
-          abv={keg.abv}
-          key={index}/>
-      )}
+      <h1>Ciders on Tap</h1>
+      <div className="flex-container">
+        {masterKegList.map((keg, index) =>
+          <Keg
+            name={keg.name}
+            brand={keg.brand}
+            price={keg.price}
+            abv={keg.abv}
+            key={index}/>
+        )}
+      </div>
+      <style jsx>{`
+        h1 {
+          margin: 40px;
+          text-align: center;
+        }
+        .flex-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          margin: 20px;
+        }
+    `}</style>
     </div>
   );
 

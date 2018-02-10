@@ -3,20 +3,24 @@ import { Link } from 'react-router-dom';
 
 function Nav(){
   const linkDecoration = {
-    textDecoration: 'none'
+    textDecoration: 'none',
+    backgroundColor: 'aliceBlue',
+    padding: '10px',
+    borderRadius: '5px'
   };
   return(
-    <div>
-      <Link style={linkDecoration} to='/'><a>Home</a></Link> | <Link style={linkDecoration} to='/keglist'><a>Taproom</a></Link>
+    <div className="nav">
+      <Link style={linkDecoration} to='/'><a>Home</a></Link> <Link style={linkDecoration} to='/keglist'><a>Taproom</a></Link>
       <style jsx>{`
         a:hover {
-          color: aliceblue;
+          color: crimson;
+        }
+        .nav {
+         font-size: 20px;
+         padding: 20px;
         }
       `}</style>
     </div>
-
-
-
   );
 }
 export default Nav;
