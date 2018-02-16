@@ -18,6 +18,8 @@ _a user interface that will display a home page and a cider list._
 
 ## Component Tree
 ![Component Tree](/img-resources/component-tree.JPG)
+## Component Tree with State
+![Stateful Component Tree](/img-resources/state-tree.jpg)
 
 ## Set up/Installation requirements
 
