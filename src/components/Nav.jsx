@@ -10,7 +10,7 @@ function Nav(){
   };
   return(
     <div className="nav">
-      <Link style={linkDecoration} to='/'><a>Home</a></Link> <Link style={linkDecoration} to='/keglist'><a>Taproom</a></Link>
+      <Link style={linkDecoration} to='/'><a>Home</a></Link> <Link style={linkDecoration} to='/keglist'><a>Taproom</a></Link> <Link style={linkDecoration} to='/newkeg'><a>New Keg</a></Link>
       <style jsx>{`
         a:hover {
           color: crimson;

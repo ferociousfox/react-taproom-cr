@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 function Keg(props){
   return(
-    <div>
+    <div className='keg-on-tap'>
       <h2>{props.brand}</h2>
       <ul>
         <li className='cider-name'>{props.name}</li>
         <li>Price: {props.price}</li>
-        <li>ABV: {props.abv}</li>
+        <li>ABV: {props.abv} %</li>
       </ul>
       <style jsx>{`
         li{
@@ -16,6 +16,11 @@ function Keg(props){
         }
         .cider-name {
           font-style: italic;
+        }
+        .keg-on-tap {
+          background-color: peachpuff;
+          border-radius: 5px;
+          padding: 5px;
         }
       `}</style>
     </div>
