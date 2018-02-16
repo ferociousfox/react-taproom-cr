@@ -11,9 +11,11 @@ function NewKeg(props){
   let _brand = null;
   let _price = null;
   let _abv = null;
+  let _description = null;
+  
   function handleNewKegSubmission(event){
     event.preventDefault();
-    props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, abv: _abv.value});
+    props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, abv: _abv.value, description: _description.value });
     _name.value = '';
     _brand.value = '';
     _price.value = '';
@@ -54,6 +56,11 @@ function NewKeg(props){
           placeholder='ABV'
           ref={(input) => {_abv = input;}} />
         <br/>
+        <input
+          type='text'
+          id='description'
+          placeholder='description'
+          ref={(input) => {_description = input;}}/>
         <button type='submit'>AddKeg</button>
       </form>
     </div>
