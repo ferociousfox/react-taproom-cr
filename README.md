@@ -1,9 +1,5 @@
 # TAPROOM with REACT
 
-
-
-# TAPROOM with REACT
-
 #### _a React app to display ciders on tap_
 
 #### _by Shane Ryan_
